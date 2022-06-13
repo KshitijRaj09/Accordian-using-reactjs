@@ -2,29 +2,30 @@
   font-family: sans-serif;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   border: 2px dotted;
   background-color: #fcf8e8;
+  max-width: min(60%, 600px);
+  min-width: 500px;
 }
 
 .inner-accordian {
   padding-left: min(30px, 20%);
-  font-size: 14px;
   border-radius: 10px;
   border: 1px solid grey;
   margin: 5px;
-  min-height: 30px;
+  position: relative;
 }
 
 .inner-accordian-data {
   padding-left: min(30px, 20%);
   color: black;
   background-color: grey;
-  padding: 10px;
+  padding: 5px;
   margin: 0 15px 5px;
   display: inline-block;
 }
 .expand-collapse {
   cursor: pointer;
-  font-size: 25px;
+  position: absolute;
+  right: min(10px, 5%);
 }
